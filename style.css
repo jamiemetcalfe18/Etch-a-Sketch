@@ -1,4 +1,41 @@
+/** 
+Google font styles
+font-family: 'Caveat', cursive;
+font-family: 'Pixelify Sans', sans-serif;
+**/
+
 html {
   height: 100%;
   width: 100%;
+  background-color: lightblue;
 }
+
+/** title **/
+#title {
+  text-align: center;
+  border: 50px;
+  font-family: 'Pixelify Sans', sans-serif;
+  size: 300px;
+}
+
+/** for grid **/ 
+.grid {
+  display: flex;  
+  border: 1px solid #000;
+  width: 258px; /* (16 cells * 16px) + (16 borders * 1px) = 258px */
+}
+
+.column {
+  flex: 1;  /* same width */
+  border-right: 1px solid #000;
+  width: 16px;
+  float: left; /* This makes columns float next to each other */
+}
+
+.cell {
+  background: white;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  height: 16px;
+}
+
