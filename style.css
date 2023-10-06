@@ -5,8 +5,6 @@ font-family: 'Pixelify Sans', sans-serif;
 **/
 
 html {
-  height: 100%;
-  width: 100%;
   background-color: lightblue;
 }
 
@@ -19,6 +17,39 @@ html {
 }
 
 /** for grid **/ 
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sketch {
+  flex: 1;
+  margin: 50px;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+}
+
+button {
+  margin-bottom: 10px; /* Adjust the margin as needed */
+  color: yellow;
+  background-color: orangered;
+  border:3px red;
+  padding: 14px 40px;
+  border-radius: 12px;
+}
+
+button:hover {
+  background-color: lightgreen;
+  color: blue;
+}
+
 .grid {
   display: flex;  
   border: 1px solid #000;
@@ -39,3 +70,9 @@ html {
   height: 16px;
 }
 
+/** footer **/ 
+footer {
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  color: darkblue;
+}
